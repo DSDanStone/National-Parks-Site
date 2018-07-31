@@ -1,0 +1,234 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    --text-color: rgb(94, 59, 4);
+    --link-color: rgb(97, 109, 134);
+    --background-color1: rgb(43, 151, 217);
+    --background-color2: #b7a56c;
+    --navbar-color: rgb(97, 109, 134);
+    --navbar-link-color: rgb(31, 201, 9);
+    padding-bottom: 20px;
+    background-color: var(--background-color1);
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+    body a {
+        color: var(--link-color);
+    }
+
+.navbar-toggle {
+    background-color: rgb(161, 167, 199);
+    color: var(--link-color);
+}
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.home-park {
+    display: block;
+    padding: 10px;
+}
+
+.home-park-img {
+    display: inline-block;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+    .home-park-img img {
+        width: 300px;
+        height: auto;
+        border-radius: 50px;
+        border: 1px solid #d6d6d6;
+        box-shadow: 3px 3px 0px #bababa;
+    }
+
+.home-park-text {
+    display: inline-block;
+    max-width: 800px;
+    vertical-align: top;
+}
+
+hr {
+    border-top: 1px solid rgb(97, 109, 134);
+}
+
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.description {
+    display: block
+}
+
+.weather-big {
+    display: inline-block;
+    max-width: 280px;
+    padding-right: 40px;
+    vertical-align: top;
+}
+
+    .weather-big img {
+        width: 200px;
+        height: auto;
+    }
+
+    .weather-big center {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+.weather-small {
+    display: inline-block;
+    max-width: 200px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+    .weather-small img {
+        width: 150px;
+        height: auto;
+    }
+
+    .weather-small center {
+        font-weight: bold;
+    }
+
+.validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+.header-img {
+    width: 50%;
+    vertical-align: top;
+}
+
+.detail-img {
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+    border-radius: 200px;
+    border: 1px solid #d6d6d6;
+    box-shadow: 3px 3px 0px #bababa;
+}
+
+.unit-swap a {
+    color: var(--link-color);
+}
+
+.navbar {
+    background: var(--navbar-color);
+}
+
+    .navbar a {
+        color: var(--navbar-link-color);
+    }
+
+.winner {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--text-color);
+    background-color: var(--background-color2);
+    background-image: url(../images/card-background.png);
+    display: block;
+    border-radius: 8px;
+    border: 1px #d6d6d6;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    box-shadow: 3px 3px 0px #bababa;
+}
+
+.result-wrapper {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "result-image result-text";
+}
+
+.result-image {
+    grid-area: result-image;
+}
+
+.result-text {
+    grid-area: result-text;
+}
+
+.votes {
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.inquiry {
+    width: 165px;
+    text-align: right
+}
+
+select {
+    width: 165px;
+}
+
+.outlined {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.unit-btn {
+    background-color: #226594;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+    .unit-btn:hover {
+        color: rgb(223, 222, 222);
+    }
